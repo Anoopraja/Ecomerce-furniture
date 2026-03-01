@@ -36,12 +36,59 @@ html {
     background-color: rgb(249, 247, 247);
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
+.element a{
+    color : rgb(0, 0, 0);
+    text-decoration: none; /* remove underline by default */
+    text-emphasis: none;
+}
+.element a:hover{
+    color : rgb(53, 52, 52);
+}
+.nav a{
+    text-decoration: none;
+    color: black;
+}
+.nav a:hover{
+    color: #000;
+}
 
+/* ensure options also hide underline and only show when hovered */
+.options {
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.options:hover {
+    text-decoration: underline;
+    color: #000;
+}
 .menu {
     display: none;
     cursor: pointer;
 }
+.element a{
+    color : rgb(0, 0, 0);
+    text-decoration: none; /* remove underline by default */
+    text-emphasis: none;
+}
+.element a:hover{
+    color : rgb(53, 52, 52);
+}
 
+/* ensure options also hide underline and only show when hovered */
+.options {
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.options:hover {
+    text-decoration: underline;
+    color: #000;
+}
 .element {
     display: flex;
     list-style: none;
@@ -503,7 +550,8 @@ html {
 }
 
 .mobile-menu-items li:hover {
-    color: rgb(158, 44, 44);
+    color: rgb(77, 75, 75);
+    text-decoration: underline;
 }
 
 /* ==================== RESPONSIVE STYLES ==================== */
